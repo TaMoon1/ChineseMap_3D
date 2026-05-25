@@ -1,0 +1,14 @@
+/**
+ * 天地图 API Key（推荐）
+ *
+ * 🔑 获取方式：
+ *   1. 打开 https://console.tianditu.gov.cn/
+ *   2. 注册/登录 → 创建应用 → 选择「浏览器端」
+ *   3. 复制 Key 填写到下方
+ *
+ * 填好后地图将使用天地图地形晕渲 + 中文注记作为底图，
+ * 国内访问速度优于 Bing Maps 和 Cesium Ion。
+ *
+ * 如果留空，将依次尝试：本地图片 → Bing Maps
+ */
+export const TDT_KEY = ''
