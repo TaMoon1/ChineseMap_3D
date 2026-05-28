@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── token / 密钥（用户自行配置） ──
+src/data/cesiumToken.ts
+src/data/tiandituKey.ts
+
+# ── 原始数据大文件（用户按需下载） ──
+public/data/chgis_dynasty.rar
+public/data/chgis_dynasty/
+public/data/chgis_province.rar
+public/data/chgis_prefecture.rar
+public/data/Regime_Bou.*
+public/data/County_Bou.*
+public/data/*.DAT
+public/data/*.ID
+public/data/*.MAP
+public/data/*.TAB
+
+# ── 本地底图（用户自行准备） ──
+public/map/china-physical.png

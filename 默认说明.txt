@@ -1,0 +1,22 @@
+项目：中国古代历史地图（ChineseMap_3D）
+技术：React 19 + TypeScript + CesiumJS 1.141 + Resium + Zustand + Vite
+目录：D:\ChineseMap_3D
+
+核心文件：
+  src/components/Map3D.tsx        → 主地图（Cesium Viewer + 王朝边界虚线渲染）
+  src/data/dynasties.ts           → 10个朝代的元数据、城市、行政区域
+  src/data/provinceMap.ts         → 朝代↔现代省份adcode映射（省界回退用）
+  src/data/tiandituKey.ts         → 天地图Key（空=''时用Bing兜底）
+  src/data/cesiumToken.ts         → Cesium Ion Token
+  src/store/useMapStore.ts        → Zustand状态（activeDynasties/sceneMode/loading）
+  src/components/App.tsx          → 根组件组合UI层
+
+边界数据（public/data/）：
+  china_provinces.json            → 中国34省份精确边界（阿里云DataV）
+  chgis_dynasty.json              → CHGIS历代王朝边界（需转换，有则优先用）
+
+王朝id：qin han tang beisong nanSong liao jin xixia ming qing
+点一个朝代只显示一个，互不干扰
+边界渲染：彩色虚线（无填充），优先级 CHGIS > 省界组合
+底图：天地图(需Key) > 本地图片 > Bing Maps
+默认视图：2D平面

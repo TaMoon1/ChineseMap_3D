@@ -1,0 +1,9 @@
+/**
+ * Cesium Ion 访问令牌（可选）
+ *
+ * 🔑 获取方式：https://ion.cesium.com/signup → Sign Up → 获取 Default Token
+ *
+ * 如果留空，地图将仅使用 Bing Maps 默认底图。
+ * 推荐填入天地图 Key（tiandituKey.ts），国内访问更快。
+ */
+export const CESIUM_ION_TOKEN = ''
